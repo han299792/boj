@@ -12,6 +12,5 @@ def count(n):
         return 4
     else:
         return count(n - 3) + count(n - 2) + count(n - 1) 
-
 for i in range(1, nums[0]+1):
     print(count(nums[i]))
