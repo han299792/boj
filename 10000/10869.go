@@ -1,13 +1,13 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-func main(){
-	var a, b int
-	fmt.Scan(&a, &b)
-	fmt.Println(a+b)
-	fmt.Println(a-b)
-	fmt.Println(a*b)
-	fmt.Println(a/b)
-	fmt.Println(a%b)
-}
+// func main(){
+// 	var a, b int
+// 	fmt.Scan(&a, &b)
+// 	fmt.Println(a+b)
+// 	fmt.Println(a-b)
+// 	fmt.Println(a*b)
+// 	fmt.Println(a/b)
+// 	fmt.Println(a%b)
+// }
