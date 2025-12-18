@@ -1,19 +1,20 @@
-import sys
-data = sys.stdin.read().split()
-N = int(data[0])
-A = []
-cnt = 0 
-for i in range(1,2*N+1, 2):
-    A.append((int(data[i]), int(data[i+1])))
+import sys, heapq
 
-A.sort(key=lambda x:(x[1], x[0]))
-endpoint = 0
+input = sys.stdin.readline
 
+N  = int(input())
+p = []
+for _ in range(N):
+    u, v = map(int, input().split())
+    p.append((u,v))
 
+p.sort(key=lambda x:(x[1], x[0]))
+endpoint=0
+cnt = 0
 for i in range(N):
-    if A[i][0] >= endpoint:
+    if p[i][0] >= endpoint:
+        endpoint=p[i][1]
         cnt += 1
-        endpoint = A[i][1]
-
+    
 print(cnt)
 
